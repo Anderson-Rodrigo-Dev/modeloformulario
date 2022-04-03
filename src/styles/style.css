@@ -13,6 +13,7 @@ body{
     background: url(../images/bg-repeat.png);
     display: flex;
     align-items: center;
+    margin: 0 auto;
 }
 
 .descricao {
@@ -109,4 +110,23 @@ input::-webkit-inner-spin-button {
 
 .formulario .input.aceito {
     border: 1px solid #00c22b;
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        width: 100vw;
+        height: 100%;
+        background-size: contain;
+        justify-content: center;
+        align-self: center;
+    }
+    
+    .descricao {
+        margin: 0;
+    }
+
+    .formulario {
+        margin-top: 30px;
+    }
 }
